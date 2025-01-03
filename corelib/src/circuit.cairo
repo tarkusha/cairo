@@ -414,7 +414,7 @@ extern fn circuit_failure_guarantee_verify(
 
 pub impl DestructFailureGuarantee of Destruct<CircuitFailureGuarantee> {
     fn destruct(self: CircuitFailureGuarantee) nopanic {
-        circuit_failure_guarantee_verify(self, 0, 1);
+        circuit_failure_guarantee_verify(self, 0, 2);
     }
 }
 
