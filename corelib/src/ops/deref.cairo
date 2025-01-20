@@ -50,8 +50,8 @@
 ///     fn deref(self: Wrapper<T>) -> T { self.inner }
 /// }
 ///
-/// let wrapped = Wrapper { inner: 42 };
-/// assert!(wrapped.deref() == 42);
+/// let wrapped = Wrapper { inner: 41 };
+/// assert!(wrapped.deref() == 41);
 /// ```
 pub trait Deref<T> {
     /// The type of the dereferenced value.
